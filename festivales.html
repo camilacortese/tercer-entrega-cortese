@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title>A BEAT</title>
+  </head>
+  <body>
+    <div id="header" class="bg-light">
+      <div class="container-xl bg-light">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">A BEAT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="festivales.html">Festivales</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="artistas.html">Artistas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>  
+    <div id="bannerFestivales" class="d-flex align-items-center text-justify"> 
+      <section class="col-lg-6 mx-auto my-5 texto text-white">
+        <h1 class="titulos-mixin-l font-bold">Encuentra tu festival de música ideal</h1>
+      </section>
+    </div> 
+    <div id="finder" class="col-10 offset-1 py-3">
+      <nav class="row no-gutters container-md mx-auto">
+        <div class="col-md-6 ">
+          <select id="inputArtist" class="form-select select-artist">
+            <option selected>Cualquier artista</option>       
+            <option value="am">Artic Monkeys</option>
+            <option value="beach">Beach House</option>  
+            <option value="dua">Dua Lipa</option>  
+            <option value="jb">Justin bieber</option>
+            <option value="md">Mac De Marco</option>
+            <option value="ti">Tame Impala</option>
+            <option value="ttc">Tyler The Creator</option>
+          </select>
+        </div> 
+        <div class="col-md-6">
+          <select id="inputCountry" class="form-select select-artist">
+            <option selected>Cualquier país</option>       
+            <option value="ar">Argentina</option>
+            <option value="bel">Bélgica</option>  
+            <option value="br">Brasil</option>  
+            <option value="ch">Chile</option>
+            <option value="co">Colombia</option>
+            <option value="es">España</option>
+            <option value="usa">Estados Unidos</option> 
+          </select>
+        </div>
+      </nav>
+    </div>
+    <div class="col-10 offset-1 py-3 px-4">
+      <a class="btn btn-primary btn_mod" href="#" role="button">Fecha</a>
+      <button class="btn btn-primary btn_mod" type="submit">Género</button>
+      <input class="btn btn-primary btn_mod" type="button" value="Recinto">
+      <input class="btn btn-primary btn_mod" type="submit" value="Actividad">
+    </div>
+    <div id="cardsArtistas" class="py-5 my-5"> 
+      <section class="col-10 offset-1 text-center">
+        <h1 class="titulos-mixin-m font-bold my-3">
+          Próximos Festivales
+        </h1>
+        <div class="row no-gutters container-md mx-auto">
+          <article class="col-12 col-md-4 py-5 itemFestival">
+            <img class="imagenNoticia"src="assets/loosef.jpeg" alt="LooseFest"> 
+            <h2 class="titulos-mixin-s font-regular px-4 pt-4 pb-2 lh-1 ">LooseFest 2022</h2>
+            <div class="descripcion font-light">Newcastle upon Tyne, Reino Unido / 20-31 Julio 2022</div>
+            <div class="descripcion_mod font-regular">Desde ARS $6450</div>
+          </article>  
+          <article class="col-12 col-md-4 py-5 itemFestival">
+            <img class="imagenNoticia" src="assets/promise.png" alt="Promiseland">  
+            <h2 class="titulos-mixin-s font-regular px-4 pt-4 pb-2 lh-1"> Promiseland Festival 2022</h2>
+            <div class="descripcion font-light">Main Beach, Australia / 1-2 Octubre 2022</div>
+            <div class="descripcion_mod font-regular">Haz tu reserva</div>  
+          </article>
+          <article class="col-12 col-md-4 py-5 itemFestival">
+            <img class="imagenNoticia"src="assets/h.png" alt="Hospitality Weekend">  
+            <h2 class="titulos-mixin-s font-regular px-4 pt-4 pb-2 lh-1">Hospitality Weekend In The Woods 2022</h2>
+            <div class="descripcion font-light">Beckenham, Reino Unido / 17-18 Septiembre 2022</div>
+            <div class="descripcion_mod font-regular">Desde ARS $4557</div>
+          </article>
+          <article class="col-12 col-md-4 py-5 itemFestival">
+            <img class="imagenNoticia"src="assets/secret.png" alt="Secret Project">  
+            <h2 class="titulos-mixin-s font-regular px-4 pt-4 pb-2 lh-1">Full Secret Project Festival 2022</h2>
+            <div class="descripcion font-light">Portugal / 17-19 Junio 2022</div>
+            <div class="descripcion_mod font-regular">Desde ARS $10632</div>
+          </article>
+          <article class="col-12 col-md-4 py-5 itemFestival">
+            <img class="imagenNoticia"src="assets/rock.jpg" alt="Rock In Rio">  
+            <h2 class="titulos-mixin-s font-regular px-4 pt-4 pb-2 lh-1">Rock in Rio Brasil 2022</h2>
+            <div class="descripcion font-light">Barra da Tijuca, Brasil / 2-4 Septiembre</div>
+            <div class="descripcion_mod font-regular">Haz tu reserva</div>
+          </article>
+          <article class="col-12 col-md-4 py-5 itemFestival">
+            <img class="imagenNoticia"src="assets/90.jpg" alt="90 Festival">  
+            <h2 class="titulos-mixin-s font-regular px-4 pt-4 pb-2 lh-1">90's Fest 2022</h2>
+            <div class="descripcion font-light">Sheffield, Reino Unido / 6 Agosto 2022</div>  
+            <div class="descripcion_mod font-regular">Desde ARS $7915</div>
+          </article>
+          <article class="col-12 col-md-4 py-5 itemFestival">
+            <img class="imagenNoticia"src="assets/summer.jpeg" alt="Summer Festival">  
+            <h2 class="titulos-mixin-s font-regular px-4 pt-4 pb-2 lh-1">Bassfest Summer Festival 2022</h2>
+            <div class="descripcion font-light">Sheffield, Reino Unido / 16-17 Junio 2022</div>
+            <div class="descripcion_mod font-regular">Desde ARS $7036</div>
+          </article>
+          <article class="col-12 col-md-4 py-5 itemFestival">
+            <img class="imagenNoticia"src="assets/time.jpeg" alt="Boohoo">  
+            <h2 class="titulos-mixin-s font-regular px-4 pt-4 pb-2 lh-1">Forbidden Forest Festival 2022</h2>
+            <div class="descripcion font-light">Grantham, Reino Unido / 2-3 Junio 2022</div>
+            <div class="descripcion_mod font-regular">Desde ARS $7036</div>
+          </article>
+          <article class="col-12 col-md-4 py-5 itemFestival">
+            <img class="imagenNoticia"src="assets/orange.jpg" alt="Fan Fan Fest">  
+            <h2 class="titulos-mixin-s font-regular px-4 pt-4 pb-2 lh-1">Fan Fan Fest 2022</h2>
+            <div class="descripcion font-light">Madrid, España / 11 de Junio 2022</div>
+            <div class="descripcion_mod font-regular">Desde ARS $6836</div>
+          </article>
+        </div> 
+      </section> 
+    </div> 
+    <div id="footer" class="d-flex align-items-center text-center bg-light">
+      <div class="col-12 col-md-4 mx-auto my-5 p-4"> 
+        <div>© 2022 ABEAT®. Todos los derechos reservados.</div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
